@@ -16348,24 +16348,24 @@ h3 {
 }
 
 .hover-screen:nth-child(1) {
-  background: url(team-1.png);
+  background: url(../img/icons/team-1.png);
   background-size: cover;
   background-position: 85% 0;
 }
 
 .hover-screen:nth-child(2) {
-  background: url(team-4.png);
+  background: url(../img/icons/team-4.png);
   background-size: cover;
   background-position: 50% 0;
 }
 .hover-screen:nth-child(3) {
-  background: url(team-2.png);
+  background: url(../img/icons/team-2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
 .hover-screen:nth-child(4) {
-  background: url(team-3.png);
+  background: url(../img/icons/team-3.png);
   background-size: cover;
   background-position: 85% 0;
 }
