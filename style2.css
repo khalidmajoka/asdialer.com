@@ -1,0 +1,905 @@
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+}
+
+.alternate-versions-area {
+  padding-bottom: 70px;
+  padding-top: 100px;
+}
+
+.alternate-versions-image {
+  margin-bottom: 30px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.alternate-versions-content {
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.alternate-versions-content .mv-card {
+  background-color: rgb(249, 249, 249);
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 25px;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.alternate-versions-content .mv-card h3 {
+  font-size: 19px;
+  margin-bottom: 0px;
+  margin-top: 18px;
+}
+
+.alternate-versions-content .mv-card:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title {
+    margin-bottom: 35px;
+    margin-top: -5px;
+  }
+
+  .section-title h2 {
+    font-size: 25px;
+    max-width: 100%;
+  }
+
+  .alternate-versions-area {
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
+
+  .alternate-versions-image {
+    padding-right: 0px;
+  }
+
+  .alternate-versions-content {
+    padding-left: 0px;
+  }
+
+  .alternate-versions-content .mv-card {
+    padding: 20px;
+  }
+
+  .alternate-versions-content .mv-card h3 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title h2 {
+    font-size: 40px;
+    max-width: 490px;
+  }
+
+  .alternate-versions-area {
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+
+  .alternate-versions-image {
+    padding-right: 0px;
+  }
+
+  .alternate-versions-content {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .alternate-versions-image {
+    padding-right: 0px;
+  }
+
+  .alternate-versions-content {
+    padding-left: 0px;
+  }
+
+  .alternate-versions-content .mv-card {
+    padding: 20px;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@keyframes flipInY {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: perspective(400px) rotateY(-20deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: perspective(400px) rotateY(10deg);
+  }
+
+  80% {
+    transform: perspective(400px) rotateY(-5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+.animate__flipInY {
+  -webkit-backface-visibility: visible !important;
+  animation-name: flipInY;
+  backface-visibility: visible !important;
+}
+.section-title {
+  margin-bottom: 50px;
+  margin-top: -10px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.section-title h2 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+      90deg,
+      rgb(22, 136, 162) 12.33%,
+      rgb(24, 117, 202) 33.75%,
+      rgb(210, 49, 177) 60.02%,
+      rgb(221, 42, 75) 89.93%
+    )
+    text;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+@media (min-width: 768px) {
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-10 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@media (prefers-reduced-motion: reduce), print {
+  .animate__animated {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}
+/*footer section css*/
+
+.inherited.Props {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: Blanco, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 17.6px;
+  font-weight: 400;
+  line-height: 29.92px;
+  margin: 264px 0px 0px;
+  padding: 0px 0px 52.8px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    transition: all 0.01s ease 0s !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  display: block;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  border: 0px;
+}
+
+form {
+  margin: 0px;
+}
+
+button,
+input {
+  font-size: 100%;
+  margin: 0px;
+  vertical-align: baseline;
+  line-height: normal;
+}
+
+button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "MD Primer Bold";
+  font-weight: 700;
+  src: url("https://css-tricks.com/wp-content/themes/CSS-Tricks-19/fonts/MDPrimer-Bold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Blanco;
+  font-weight: 400;
+  src: url("https://css-tricks.com/wp-content/themes/CSS-Tricks-19/fonts/BlancoSubset-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Blanco;
+  font-weight: 700;
+  src: url("https://css-tricks.com/wp-content/themes/CSS-Tricks-19/fonts/BlancoSubset-Bold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Blanco;
+  font-style: italic;
+  src: url("https://css-tricks.com/wp-content/themes/CSS-Tricks-19/fonts/BlancoSubset-Italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Blanco;
+  font-style: italic;
+  font-weight: 700;
+  src: url("https://css-tricks.com/wp-content/themes/CSS-Tricks-19/fonts/BlancoSubset-BoldItalic.woff2")
+    format("woff2");
+}
+
+a {
+  color: rgb(0, 137, 199);
+}
+
+a:focus,
+a:hover {
+  opacity: 0.66;
+}
+
+h4,
+h5 {
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0px 0px 1.5rem;
+}
+
+h4 {
+  font-family: "MD Primer Bold", Rubik, Lato, "Lucida Grande",
+    "Lucida Sans Unicode", Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0px 0px 0.8rem;
+}
+
+h5 {
+  font-weight: 800;
+  margin: 0px 0px 0.5rem;
+  font-size: 1rem;
+}
+
+h4,
+h5 {
+  line-height: 1.05;
+}
+
+p {
+  margin: 0px 0px 1.5rem;
+}
+
+.screen-reader-text {
+  position: absolute !important;
+}
+
+input[type="email"] {
+  background: rgb(234, 234, 234);
+  border: 1px solid rgb(212, 212, 212) !important;
+  border-radius: 4px;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+input[type="email"]:focus {
+  background: rgb(255, 255, 255);
+}
+
+button {
+  font-family: inherit;
+}
+
+.footer-inside {
+  margin: 0px auto;
+  max-width: 1600px;
+  padding: 0 3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.top-of-site-link {
+  bottom: 1.8rem;
+  opacity: 0;
+  position: fixed;
+  right: 1.5rem;
+  transition: all 0.2s ease 0s;
+  visibility: hidden;
+  z-index: 15;
+}
+
+.top-of-site-link[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+}
+
+.top-of-site-link svg {
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 5px);
+}
+
+.site-footer {
+  background-color: rgb(17, 17, 17);
+  background-image: paint(fleck);
+  margin: calc(0.4rem * 5) 0 0;
+  padding: 0 0 3rem;
+  position: relative;
+}
+
+.site-footer h4,
+.site-footer h5 {
+  color: rgb(255, 122, 24);
+  font-family: "MD Primer Bold", Rubik, Lato, "Lucida Grande",
+    "Lucida Sans Unicode", Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin: 2rem 31px 0.25rem;
+  text-transform: uppercase;
+}
+
+.site-footer h4 {
+  -webkit-margin-before: 0px;
+  margin-block-start: 0px;
+}
+
+.site-footer .icon-logo-star {
+  fill: url("https://css-tricks.com/wp-content/themes/CSS-Tricks-19/style.css?ver=cache_bust=1676306214041#orange-to-pink");
+  height: 120px;
+  left: 3rem;
+  position: absolute;
+  top: -90px;
+  width: 120px;
+  z-index: -1;
+}
+
+@media (max-width: 830px) {
+  .site-footer .icon-logo-star {
+    left: auto;
+    right: 40px;
+    top: -130px;
+  }
+}
+
+@media (max-width: 800px) {
+  .site-footer {
+    margin-top: 20rem;
+  }
+}
+
+.colophon {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin: 2rem 0px 0px;
+}
+
+.footer-message-and-form {
+  align-items: end;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1.4fr;
+}
+
+@media (max-width: 830px) {
+  .footer-message-and-form {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-message-and-form .footer-form-wrap {
+    order: -1;
+  }
+}
+
+.footer-form-wrap {
+  background: rgb(67, 67, 67);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: -3rem 0px 0px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.footer-form-wrap::after {
+  -webkit-clip-path: polygon(100% 0px, 100% 100%, 0px 100%);
+  background: rgb(144, 144, 144);
+  clip-path: polygon(100% 0px, 100% 100%, 0px 100%);
+  content: "";
+  height: 48px;
+  position: absolute;
+  right: 100%;
+  top: 0px;
+  width: 20px;
+  z-index: -1;
+}
+
+.link-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 1.5;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 950px) {
+  .link-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 374px) {
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.link-grid li {
+  display: flex;
+}
+
+.link-grid a {
+  color: rgb(169, 163, 159);
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 0.2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.link-grid a:focus,
+.link-grid a:hover {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.mktoForm {
+  display: flex !important;
+  gap: 1rem;
+  width: 100% !important;
+}
+
+.mktoForm > div:nth-of-type(2) {
+  display: none;
+}
+
+.mktoFormRow,
+.mktoFormRow .mktoFormCol {
+  display: flex;
+  flex: 1 1 0%;
+}
+
+.mktoFormRow .mktoFormCol {
+  margin: 0px !important;
+}
+
+.mktoFormRow .mktoFormCol .mktoFieldWrap {
+  display: flex;
+  flex: 1 1 0%;
+}
+
+.mktoGutter,
+.mktoOffset {
+  width: 0px !important;
+}
+
+.mktoLabel {
+  width: auto !important;
+}
+
+#LblEmail {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+.mktoEmailField {
+  background: rgb(234, 234, 234) !important;
+  border: 0px !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  flex: 1 1 0%;
+  height: auto !important;
+  padding: 0.8rem !important;
+  width: 100%;
+}
+
+.mktoEmailField:focus {
+  background: rgb(255, 255, 255);
+}
+
+.mktoButtonWrap {
+  margin: 0px !important;
+}
+
+.mktoButton {
+  -o-border-image: initial;
+  background-color: rgb(94, 94, 94) !important;
+  border-image: initial;
+  border-left-color: initial;
+  border-left-style: initial;
+  border-radius: 4px !important;
+  border-top-color: initial;
+  border-top-style: initial;
+  border-left-width: 0px;
+  border-bottom: 1px solid rgb(38, 38, 38);
+  border-right: 1px solid rgb(38, 38, 38);
+  border-top-width: 0px;
+  box-shadow: inset 1px 1px 0px rgb(119, 119, 119),
+    0px 2px 3px rgba(0, 0, 0, 0.4) !important;
+  color: rgb(255, 255, 255) !important;
+  display: inline-block;
+  font-family: "MD Primer Bold", Rubik, Lato, "Lucida Grande",
+    "Lucida Sans Unicode", Tahoma, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all 0.07s ease 0s;
+  white-space: nowrap;
+}
+
+.mktoButton:not(.disabled):focus,
+.mktoButton:not(.disabled):hover {
+  opacity: 0.66;
+  text-decoration: none;
+}
+
+#teconsent {
+  bottom: 0px;
+  font-size: 0px;
+  height: 33px;
+  position: fixed;
+  right: 0px;
+  z-index: 1000;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  border: 0px;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  overflow-wrap: normal !important;
+  padding: 0px;
+  position: absolute;
+  width: 1px;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+}
+
+.mktoForm {
+  text-align: left;
+}
+
+.mktoForm .mktoClear {
+  clear: both;
+  float: none;
+}
+
+.mktoForm div,
+.mktoForm label,
+.mktoForm span {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.mktoForm input {
+  margin: 0px;
+}
+
+.mktoForm * {
+  font-family: inherit;
+}
+
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset {
+  float: left;
+  height: 1.2em;
+}
+
+.mktoForm .mktoFieldWrap {
+  float: left;
+}
+
+.mktoForm .mktoFieldWrap .mktoInstruction {
+  display: none;
+}
+
+.mktoForm .mktoLabel {
+  float: left;
+  line-height: 1.2em;
+  padding-top: 0.3em;
+}
+
+.mktoForm .mktoField {
+  float: left;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.mktoForm .mktoAsterix {
+  color: rgb(191, 0, 0);
+  display: none;
+  float: right;
+  padding-left: 5px;
+}
+
+.mktoForm .mktoRequiredField .mktoAsterix {
+  display: block;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel {
+  font-weight: bold;
+}
+
+.mktoForm input[type="email"] {
+  line-height: 1.2em;
+  margin: 0px;
+  padding: 0.1em 0.2em;
+  box-sizing: border-box;
+}
+
+.mktoForm .mktoFormRow {
+  clear: both;
+}
+
+.mktoForm .mktoFormCol {
+  float: left;
+  min-height: 2em;
+  position: relative;
+}
+
+.mktoButtonRow {
+  display: inline-block;
+  position: relative;
+}
+
+.mktoForm button.mktoButton {
+  cursor: pointer;
+  margin: 0px;
+}
+
+.mktoForm button.mktoButton:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 480px) {
+  .mktoForm,
+  .mktoForm * {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .mktoForm .mktoGutter,
+  .mktoForm .mktoOffset {
+    display: none;
+  }
+
+  .mktoForm .mktoFormCol .mktoLabel {
+    text-align: left;
+    width: 100%;
+  }
+
+  .mktoForm .mktoFieldWrap,
+  .mktoForm .mktoFormCol {
+    float: none;
+  }
+
+  .mktoForm input[type="email"] {
+    font-size: 18px;
+    height: 1.5em;
+    line-height: 1.5em;
+    width: 100%;
+  }
+
+  .mktoForm .mktoFormRow .mktoField {
+    clear: left;
+  }
+
+  .mktoForm .mktoFormRow .mktoFormCol {
+    clear: both;
+  }
+
+  .mktoForm .mktoFormRow .mktoRequiredField .mktoAsterix {
+    float: left;
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px),
+  only screen and (max-device-width: 480px),
+  only screen and (max-device-height: 480px) {
+  .mktoForm * {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+}
+
+.mktoForm input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(174, 176, 182);
+  box-shadow: 0px 0px 10px 2px rgb(175, 213, 247);
+  color: rgb(0, 0, 0);
+  line-height: 1.5em;
+  min-height: 1.9em;
+  padding: 0.2em 0.3em;
+}
+
+.mktoForm input[type="email"]:focus {
+  border: 1px solid rgb(136, 136, 136);
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.mktoForm .mktoButtonWrap.mktoFirefox .mktoButton {
+  background-color: rgb(130, 196, 58);
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.1)
+  );
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1),
+    0px 3px 0px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: inline-block;
+  font: italic 14px / 32px Georgia, serif;
+  margin: 2px;
+  padding: 0px 15px 3px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
+  vertical-align: middle;
+}
+
+.mktoForm .mktoButtonWrap.mktoFirefox .mktoButton:hover {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+.mktoForm .mktoButtonWrap.mktoFirefox .mktoButton:active {
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1),
+    0px 2px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 2px;
+}
