@@ -35,17 +35,6 @@ $(document).ready(function () {
 
     $('#defaultOpen').click ();
 });
-
-
-//hide
-// animation - delay: 0.6s; visibility: hidden;
-
-// animation - delay: 0.6s; visibility: visible;
-
-
-
-// animate animate__fadeInUp animate__animated
-//our team section start
 let team = document.getElementById("team-inf");
 let Hscreen = document.getElementsByClassName("hover-screen")[0];
 document.addEventListener("click", element =>{

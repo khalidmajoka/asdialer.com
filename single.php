@@ -29,22 +29,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="Xk37b12SZscoQQkSJ4GAvfL89O2d9wO40xw6VpOEcNI" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style3.css">
-    <link rel="stylesheet" href="style4.css">
-    <link rel="stylesheet" href="style5.css">
-    <script src="jquery.js"></script>
-    <script src="default.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <link rel="stylesheet" href="assets/css/style4.css">
+    <link rel="stylesheet" href="assets/css/style5.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/default.js"></script>
     <title>Powerful Cloud Call-Center Solution</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Google tag (gtag.js) -->
@@ -65,8 +65,8 @@
 <body>
     <nav style="position: sticky;" id="navbar-desktop"
         class="navbar navbar-expand-lg navbar-light bg-light inheritedProps">
-        <div class="container"><a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="logo"
-                    id="logo"></a> <button type="button" data-bs-toggle="collapse"
+        <div class="container"><a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"
+                                                                              id="logo"></a> <button type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
@@ -398,7 +398,7 @@
         <div id="consent-banner"></div>
         <div id="teconsent" consent="0|1|2|3"> <a id="icon-id05260943505895821" tabindex="0" role="contentinfo"
                 aria-label="Secondary" lang="en" style="cursor: pointer;"><img class="cookies"
-                    src="img/cookies.png"></a> </div>
+                    src="assets/img/cookies.png"></a> </div>
         <!-- Whatsapp -->
         <div class="wrapper">
             <a class="social" href="https://wa.me/+19174733638/?text=Hi!%20ASDIALER."><i

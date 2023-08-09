@@ -4855,20 +4855,20 @@ span.beg {
 }
 
 .col-one.Believers {
-  background-image: url("img/sucessfull.jpg");
+  background-image: url("sucessfull.jpg");
   margin-right: 5%;
 }
 
 .col-one.Doers {
-  background-image: url("img/sucessfull.jpg");
+  background-image: url("sucessfull.jpg");
 }
 
 .col-one.Believers.Achive {
-  background-image: url("img/sucessfull.jpg");
+  background-image: url("sucessfull.jpg");
 }
 
 .col-one.players {
-  background-image: url("img/sucessfull.jpg");
+  background-image: url("sucessfull.jpg");
 }
 
 .col-one h3 {
@@ -6641,7 +6641,7 @@ input[type="search"] {
 }
 
 .service-wrap:hover {
-  background-image: url(img/logo-favicon.jpg);
+  background-image: url(logo-favicon.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: local;
