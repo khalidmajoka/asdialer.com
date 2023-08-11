@@ -441,7 +441,7 @@ img {
 .site-footer {
   background-color: rgb(17, 17, 17);
   background-image: paint(fleck);
-  margin: calc(0.4rem * 5) 0 0;
+  margin: calc(3.9rem * 5) 0 0;
   padding: 0 0 3rem;
   position: relative;
 }

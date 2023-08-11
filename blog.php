@@ -1,5 +1,5 @@
 <?php
-require_once "db.php";
+require_once "db/db.php";
 $sql = 'SELECT * FROM posts WHERE web_id = 2';
 $query = mysqli_query($conn, $sql);
 ?>
@@ -15,6 +15,7 @@ $query = mysqli_query($conn, $sql);
     <link rel="stylesheet" href="assets/css/style3.css">
     <link rel="stylesheet" href="assets/css/style4.css">
     <link rel="stylesheet" href="assets/css/style5.css">
+    <link rel="stylesheet" href="assets/css/pagination.css">
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/default.js"></script>
     <title>Powerful Cloud Call-Center Solution</title>
@@ -30,13 +31,13 @@ $query = mysqli_query($conn, $sql);
     <meta name="theme-color" content="#ffffff">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYNPSJS7BJ"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-PYNPSJS7BJ');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYNPSJS7BJ');
     </script>
 </head>
 
@@ -293,7 +294,7 @@ $query = mysqli_query($conn, $sql);
     <nav style="position: sticky;" id="navbar-desktop"
         class="navbar navbar-expand-lg navbar-light bg-light inheritedProps">
         <div class="container"><a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"
-                                                                              id="logo"></a> <button type="button" data-bs-toggle="collapse"
+                    id="logo"></a> <button type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
@@ -373,7 +374,37 @@ $query = mysqli_query($conn, $sql);
             </div>
             <script src="js/jzBox.js"></script>
         </div>
+
     </section>
+
+    <section id="" class="m-5 ">
+        <div class="container">
+            <div class="card-body inheritedProps">
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+                    <div class="text-center text-lg-left">
+                        <p style="font-size:large;" class="mb-0">
+                            Showing <strong>1</strong>-<strong>10</strong> out of <strong>19</strong> results. </p>
+                    </div>
+
+                    <ul class="pagination align-self-center align-self-lg-auto mb-0 mt-3 mt-lg-0">
+
+                        <li class="page-item active">
+                            <a href="https://developestinytools.online/blog?&amp;page=1" class="page-link">1</a>
+                        </li>
+                        <li class="page-item ">
+                            <a href="https://developestinytools.online/blog?&amp;page=2" class="page-link">2</a>
+                        </li>
+
+                        <li class="page-item"><a href="https://developestinytools.online/blog?&amp;page=2"
+                                class="page-link" aria-label="Next">›</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <footer class="site-footer inherited.Props"> <svg class="icon-logo-star" width="35px" height="35px"
             viewBox="0 0 362.62 388.52" data-spin-me="false">
             <path
@@ -390,46 +421,46 @@ $query = mysqli_query($conn, $sql);
                         class="mktoForm mktoHasWidth mktoLayoutLeft"
                         style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 151px;">
                         <style type="text/css">
-                            .mktoForm .mktoButtonWrap.mktoFirefox .mktoButton {
-                                background-color: #82C43A;
-                                background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-                                background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-                                background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-                                background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-                                background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-                                border: none;
-                                display: inline-block;
-                                vertical-align: middle;
-                                margin: 2px;
-                                font: italic 14px/32px Georgia, Serif;
-                                text-align: center;
-                                color: white;
-                                text-decoration: none;
-                                text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
-                                -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1), 0px 3px 0px rgba(0, 0, 0, 0.1);
-                                -moz-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1), 0px 3px 0px rgba(0, 0, 0, 0.1);
-                                box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1), 0px 3px 0px rgba(0, 0, 0, 0.1);
-                                padding: 0px 15px 3px;
-                                -webkit-border-radius: 5px;
-                                -moz-border-radius: 5px;
-                                border-radius: 5px;
-                            }
+                        .mktoForm .mktoButtonWrap.mktoFirefox .mktoButton {
+                            background-color: #82C43A;
+                            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+                            background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+                            background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+                            background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+                            background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+                            border: none;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: 2px;
+                            font: italic 14px/32px Georgia, Serif;
+                            text-align: center;
+                            color: white;
+                            text-decoration: none;
+                            text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+                            -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1), 0px 3px 0px rgba(0, 0, 0, 0.1);
+                            -moz-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1), 0px 3px 0px rgba(0, 0, 0, 0.1);
+                            box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1), 0px 3px 0px rgba(0, 0, 0, 0.1);
+                            padding: 0px 15px 3px;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            border-radius: 5px;
+                        }
 
-                            .mktoForm .mktoButtonWrap.mktoFirefox .mktoButton:hover {
-                                background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-                                background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-                                background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-                                background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-                                background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-                            }
+                        .mktoForm .mktoButtonWrap.mktoFirefox .mktoButton:hover {
+                            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+                            background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+                            background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+                            background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+                            background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+                        }
 
-                            .mktoForm .mktoButtonWrap.mktoFirefox .mktoButton:active {
-                                position: relative;
-                                top: 2px;
-                                -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px rgba(0, 0, 0, 0.1);
-                                -moz-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px rgba(0, 0, 0, 0.1);
-                                box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px rgba(0, 0, 0, 0.1);
-                            }
+                        .mktoForm .mktoButtonWrap.mktoFirefox .mktoButton:active {
+                            position: relative;
+                            top: 2px;
+                            -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px rgba(0, 0, 0, 0.1);
+                            -moz-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px rgba(0, 0, 0, 0.1);
+                            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px rgba(0, 0, 0, 0.1);
+                        }
                         </style>
                         <div class="mktoFormRow">
                             <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
@@ -522,66 +553,66 @@ $query = mysqli_query($conn, $sql);
     </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.counter-value').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 3500,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
+    $(document).ready(function() {
+        $('.counter-value').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3500,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
             });
         });
+    });
     </script>
     <script>
-        $(document).ready(function () {
-            $(".testimonial .indicators li").click(function () {
-                var i = $(this).index();
-                var targetElement = $(".testimonial .tabs li");
-                targetElement.eq(i).addClass('active');
-                targetElement.not(targetElement[i]).removeClass('active');
-            });
-            $(".testimonial .tabs li").click(function () {
-                var targetElement = $(".testimonial .tabs li");
-                targetElement.addClass('active');
-                targetElement.not($(this)).removeClass('active');
-            });
+    $(document).ready(function() {
+        $(".testimonial .indicators li").click(function() {
+            var i = $(this).index();
+            var targetElement = $(".testimonial .tabs li");
+            targetElement.eq(i).addClass('active');
+            targetElement.not(targetElement[i]).removeClass('active');
         });
-        $(document).ready(function () {
-            $(".slider .swiper-pagination span").each(function (i) {
-                $(this).text(i + 1).prepend("0");
-            });
+        $(".testimonial .tabs li").click(function() {
+            var targetElement = $(".testimonial .tabs li");
+            targetElement.addClass('active');
+            targetElement.not($(this)).removeClass('active');
         });
+    });
+    $(document).ready(function() {
+        $(".slider .swiper-pagination span").each(function(i) {
+            $(this).text(i + 1).prepend("0");
+        });
+    });
     </script>
     <script>
-        var close_button = document.querySelector(".close-button");
-        var social_buttons = document.querySelectorAll(".social");
+    var close_button = document.querySelector(".close-button");
+    var social_buttons = document.querySelectorAll(".social");
 
-        close_button.addEventListener('click', () => {
-            social_buttons.forEach(function (buttons) {
-                buttons.classList.toggle('hide');
-            });
+    close_button.addEventListener('click', () => {
+        social_buttons.forEach(function(buttons) {
+            buttons.classList.toggle('hide');
         });
+    });
     </script>
     <script>
-        $(window).scroll(function () {
-            if ($(this).scrollTop() < 1000) {
-                $('#logo').hide(1000);
-            } else {
-                $('#logo').show(1000);
-            }
-        });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() < 1000) {
+            $('#logo').hide(1000);
+        } else {
+            $('#logo').show(1000);
+        }
+    });
     </script>
 </body>
 

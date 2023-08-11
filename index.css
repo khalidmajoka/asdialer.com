@@ -1,0 +1,100 @@
+html{
+    overflow-x: hidden;
+}
+.table th, .table td {
+    vertical-align: middle;
+    font-size: 0.875rem;
+    line-height: 1;
+    white-space: nowrap;
+    padding: 14px 0 14px 25px;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ebedf2;
+}
+.table thead th {
+    border-top: 0;
+    border-bottom-width: 1px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    padding-left: 25px;
+}
+.table th, .table td {
+    vertical-align: middle;
+    font-size: clamp(8px , 5vw , 19px);
+    line-height: 1;
+    white-space: nowrap;
+    padding: 14px 0 14px 25px;
+}
+.table th, .table td {
+    padding: 0.9375rem;
+    vertical-align: top;
+    border-top: 1px solid #ebedf2;
+}
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.h1{
+    font-weight: 800;
+    font-size: clamp(13px , 10vw , 53px);
+    margin-top: 150px;
+    font-style: normal;
+    color: rgb(18,28,45);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.p1{
+    font-size: 19px;
+}
+.desk{
+    background-color: rgb(244, 244, 244);
+}
+.icon{
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+.text{
+    font-size: 20px;
+}
+.gh{
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.hov:hover .gh{
+   cursor: pointer;
+   transform: translateY(10px);
+}
+.weight{
+    font-weight: 700;
+}
+.cont{
+    background-color: rgb(244, 244, 244);
+}
+.clsx{
+    font-size: 25px;
+    font-weight: 500;
+}
+.all{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

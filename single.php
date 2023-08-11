@@ -1,6 +1,6 @@
 <?php
 
-    require_once "db.php";
+    require_once "db/db.php";
 
         if (isset($_GET['id'])) {
         $postid = $_GET['id'];
@@ -66,7 +66,7 @@
     <nav style="position: sticky;" id="navbar-desktop"
         class="navbar navbar-expand-lg navbar-light bg-light inheritedProps">
         <div class="container"><a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"
-                                                                              id="logo"></a> <button type="button" data-bs-toggle="collapse"
+                    id="logo"></a> <button type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
@@ -167,7 +167,7 @@
 						<h6 style="color: #cc2222;">'.$row["author"].' <b style="color: #000;">|</b> ('.mysqli_num_rows($query2).') Comments <b style="color: #000;">|</b> '.$row["date"].'</h6>
 						<br>
 
-						<p class=" justify-content-center">
+						<p style="color:black;" class=" justify-content-center">
 							'.$row["content"].'
 						</p>'
 							;

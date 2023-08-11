@@ -14507,7 +14507,7 @@ a:hover {
   width: 482px;
   right: 1%;
   top: 21%;
-  background-image: url(img-right-1.webp);
+  background-image: url(../img/img-right-1.webp);
   background-repeat: no-repeat;
   height: 100vh;
   opacity: 0.4 !important;
@@ -17772,4 +17772,10 @@ h6 {
 /* above Navbar social media css */
 .row span {
   margin-left: 16px;
+}
+
+
+.justify-content-center > p{
+  color:black;
+
 }
